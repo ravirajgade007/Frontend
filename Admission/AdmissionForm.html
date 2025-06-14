@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admission Form</title>
+  <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+  <div class="container">
+    <form id="admissionForm">
+      <h2>Admission Form</h2>
+      
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="email" id="email" placeholder="Email Address" required />
+      <input type="tel" id="phone" placeholder="Phone Number" required />
+      <input type="date" id="dob" placeholder="Date of Birth" required />
+      
+      <div class="gender">
+        <label><input type="radio" name="gender" value="Male" required /> Male</label>
+        <label><input type="radio" name="gender" value="Female" required /> Female</label>
+        <label><input type="radio" name="gender" value="Other" required /> Other</label>
+      </div>
+      
+      <select id="course" required>
+        <option value="">Select Course</option>
+        <option value="B.Tech/BE">B.Tech/BE</option>
+        <option value="M.Tech/ME">M.Tech/ME</option>
+        <option value="BCA">BCA</option>
+        <option value="MCA">MCA</option>
+        <option value="MBA">MBA</option>
+      </select>
+      
+      <textarea id="address" placeholder="Address" rows="3" required></textarea>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <script src="Script.js"></script>
+</body>
+</html>
